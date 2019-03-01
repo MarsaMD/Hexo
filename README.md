@@ -1,7 +1,7 @@
 <h1 align="center"><img src="https://oded.blog/images/2017/07/hexo-logo.png"></h1>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi) | [Team](#team)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi) | [Team](#team)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Sekilas Tentang
 Sebuah blog framework yang cepat, sederhana, dan kuat yang didukung oleh [Node.js](https://nodejs.org).
@@ -84,7 +84,11 @@ $ npm install --save hexo-admin
 $ hexo server -d
 $ open http://localhost:4000/admin/
 ```
-### 3. Menambahkan password
+## Menambahkan dan mengganti tema
+
+
+# Maintenance
+## Menambahkan password
 Jika Anda menggunakan plugin [hexo-admin](https://github.com/jaredly/hexo-admin) di live server Anda, Anda perlu perlindungan kata sandi. Untuk mengaktifkannya, Anda cukup menambahkan beberapa variabel konfigurasi ke hexo `_config.yml` Anda:
 ``` bash
 admin:
@@ -97,7 +101,8 @@ Password_hash adalah sebuah bcrypt hash dari kata sandi Anda. Secret digunakan u
 Sebuah utility di Pengaturan admin Hexo dapat melakukan hash pada kata sandi Anda dan membuat `admin` section untuk Anda. Mulai Hexo dan pergi ke `Settings > Setup authentification` dan isi informasi Anda. Salin YAML yang dihasilkan ke `_config.yml` Anda.
 
 Setelah itu, mulai server hexo Anda dan pergi ke `/admin/`, Anda akan diminta untuk memasukkan kata sandi.
-### 4. Melakukan kustomisasi post metadata
+
+## Melakukan kustomisasi post metadata
 Untuk menambah dan mengedit post metadata Anda dengan antarmuka admin, tambahkan variabel metadata dan variabel khusus Anda ke hexo `_config.yml` Anda:
 ``` bash
 metadata:
